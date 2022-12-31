@@ -1,0 +1,58 @@
+<meta charset="UTF-8">
+<title>Fun Dashboard </title>
+
+<head>
+  <!-- CSS (load bootstrap from a CDN) -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <style>
+    body {
+      padding-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <% doctorlist.forEach(function(doctorl) { %>
+    <div class="container">
+      <div class="card-header">
+        <div class="pro-img">
+          <img class="rounded-circle" src="https://th.bing.com/th/id/R.e1707c345d5ac10c80a674030e606643?rik=pOsTg5KBoLuNvw&riu=http%3a%2f%2fwww.snut.fr%2fwp-content%2fuploads%2f2015%2f08%2fimage-de-paysage.jpg&ehk=1O5SWKkGpZ8yU%2b%2fAnLXG1v8k6BKxgyiXgHbOWBW1ir0%3d&risl=1&pid=ImgRaw&r=0" alt="HTML5 Icon" width="128" height="128">
+        </div>
+        <strong>Dr.</strong>
+        <%= doctorl.fname %>
+          <%= doctorl.lname %>
+            <div class="card-title">
+
+              <%= doctorl.email %> </br>
+                <%= doctorl.contact %>
+                  <%= doctorl.address %>
+                    <%= doctorl.city %>
+                      <%= doctorl.zip %>
+            </div>
+      </div>
+    </div>
+    <% }); %>
+
+
+      <ul>
+        <% doctorlist.forEach(function(doctorl) { %>
+          <li>
+            <%= doctorl.fname %>
+              <%= doctorl.lname %>
+                <%= doctorl.phone %>
+                  <%= doctorl.sex %>
+                    <%= doctorl.email %>
+                      <%= doctorl.city %>
+          </li>
+          <% }); %>
+      </ul> -->
+      <header><%- include('./header') %></header>
+      <main>
+        <h1>here some codes</h1>
+        <h1>here some codes</h1>
+        <h1>here some codes</h1>
+        <h1>here some codes</h1>
+        <h1>here some codes</h1>
+      </main>
+      <footer class="page-footer"><%- include('./footer') %></footer>
+</body>

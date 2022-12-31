@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../assets/img/favicon.ico" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="copyright" content="MACode ID, https://99clinics.com/">
+
+  <title>99clinics-Resister</title>
+
+  <link rel="stylesheet" href="../assets/css/maicons.css">
+
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+  <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
+
+  <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+
+  <link rel="stylesheet" href="../assets/css/theme.css">
+</head>
+<body>
+
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <%- include('./header', {doctor: 'active'}) %> 
+
+
+  <div class="page-banner overlay-dark bg-image" style="background-image: url(../assets/img/bg_image_1.jpg);">
+    <div class="banner-section">
+      <div class="container text-center wow fadeInUp">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0 mb-2">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Join as doctor</li>
+          </ol>
+        </nav>
+        <h1 class="font-weight-normal">Sign-Up/Resister</h1>
+      </div> <!-- .container -->
+    </div> <!-- .banner-section -->
+  </div> <!-- .page-banner -->
+
+  <div class="page-section">
+    <div class="container">
+      <h1 class="text-center wow fadeInUp">Membership for doctors</h1>
+
+      <div class="contact-form mt-5" >
+       <div id="div1">
+        <h1 class="bg-custom wow zoomIn text-center" style="color: aliceblue; border-radius: 5px;"><span> Personal Information</span></h1>
+        <div class="row mb-3">
+          <div class="col-sm-6 py-2 wow fadeInRight">
+            <label for="im">Upload Image for Profile<span class="text-danger"> *</span></label>
+            <input type="file" id="im" name="img" class="form-control"><span id="imt" class="small" hidden></span>
+          </div>
+          <div class="col-sm-6 py-2 wow fadeInLeft">
+            <label for="fname">First Name <small>( for appointment )</small><span class="text-danger"> *</span></label>
+            <input type="text" id="fname" class="form-control" required>
+          </div>
+          <div class="col-sm-6 py-2 wow fadeInLeft">
+            <label for="lname">Last Name <small>( for appointment )</small><span class="text-danger"> *</span></label>
+            <input type="text" id="lname" class="form-control" required>
+          </div>
+          <div class="col-sm-6 py-2 wow fadeInLeft">
+            <label for="email">Email <small>( for appointment )</small><span class="text-danger"> *</span></label>
+            <input type="email" id="email" class="form-control" placeholder="Email address.." required>
+          </div>
+          <div class="col-sm-6 py-2 wow fadeInRight">
+            <label for="phone">Mobile No.<span class="text-danger"> *</span></label>
+            <input type="tel" id="phone" class="form-control" placeholder="98765...." maxlength="10" >
+          </div>
+          <div class="col-sm-6 py-2 wow fadeInLeft">
+            <label for="contact">Contact No. <small>( for public profile )</small><span class="text-danger"> *</span></label>
+            <input type="tel" id="contact" class="form-control" placeholder="98765...." maxlength="10" required>
+          </div>
+          <div class="col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
+            <label for="sex">Sex</label>
+            <select id="sex" class="custom-select">
+              <option selected value=''>...</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Non">Don't want to say</option>
+            </select>
+          </div>
+          <div class="col-12 py-2 wow fadeInUp">
+            <label for="address">Address<span class="text-danger"> *</span></label>
+            <input type="text" id="address" class="form-control" placeholder="Enter Address..">
+          </div>
+
+          <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
+            <select id="pstate" class="custom-select" required>
+              
+              <option selected value=''>
+                Choose State *
+              </option>
+              <option value="50">Andaman and Nicobar Islands</option>
+              <option value="11">Andhra Pradesh</option>
+              <option value="12">Arunachal Pradesh</option>
+              <option value="13">Assam</option>
+              <option value="14">Bihar</option>
+              <option value="51">Chandigarh</option>
+              <option value="15">Chhattisgarh</option>
+              <option value="52">Dadra and Nagar Haveli</option>
+              <option value="53">Daman and Diu</option>
+              <option value="55">Delhi</option>
+              <option value="16">Goa</option>
+              <option value="17">Gujarat</option>
+              <option value="18">Haryana</option>
+              <option value="19">Himachal Pradesh</option>
+              <option value="20">Jammu and Kashmir</option>
+              <option value="21">Jharkhand</option>
+              <option value="22">Karnataka</option>
+              <option value="23">Kerala</option>
+              <option value="54">Lakshadweep</option>
+              <option value="24">Madhya Pradesh</option>
+              <option value="25">Maharashtra</option>
+              <option value="26">Manipur</option>
+              <option value="27">Meghalaya</option>
+              <option value="28">Mizoram</option>
+              <option value="29">Nagaland</option>
+              <option value="30">Orissa</option>
+              <option value="56">Puducherry</option>
+              <option value="31">Punjab</option>
+              <option value="32">Rajasthan</option>
+              <option value="33">Sikkim</option>
+              <option value="34">Tamil Nadu</option>
+              <option value="35">Tripura</option>
+              <option value="36">Uttar Pradesh</option>
+              <option value="37">Uttarakhand</option>
+              <option value="38">West Bengal</option>
+              
+            </select>
+          </div>
+          <div class="col-12 col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
+            <select id="pcity" class="custom-select">
+              
+              <option selected value=''>
+                Choose City
+              </option>
+              <option value="sikar">Sikar</option>
+              <option value="jaipur">Jaipur</option>
+              <option value="pune">Pune</option>
+            </select>
+          </div>
+          <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
+            
+              <input type="tel" id="pzip" class="form-control" placeholder="Zip Code" maxlength="6">
+            
+          </div>
+        </div>
+        <button type="button" id="next" class="btn btn-custom wow zoomIn">Next</button>
+       </div>
+       <div id="div2" class="contact-form mt-5" >
+          <h1 class="bg-custom wow zoomIn text-center" style="color: aliceblue; border-radius: 5px;"><span> Qualification Details</span></h1>
+          <div class="row mb-3">
+              <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
+                <label for="graduation">Graguation</label>
+                <select id="ug" class="custom-select" required>
+              
+                  <option selected value=''>
+                    Choose Type of Graduation
+                  </option>
+                  <option value="general">General Health</option>
+                  <option value="ANESTHESIOLOGIST">ANESTHESIOLOGIST</option>
+                  <option value="BARIATRIC SURGEON">BARIATRIC SURGEON</option>
+                  <option value="CARDIAC SURGEON">CARDIAC SURGEON</option>
+                  <option value="DENTIST">DENTIST</option>
+                  <option value="DERMATOLOGIST">DERMATOLOGIST</option>
+                  <option value="DIEBETOLOGIST">DIEBETOLOGIST </option>
+                  <option value="GASTROENTROLOGIST">GASTROENTROLOGIST</option>
+                  <option value="GEN PHYSICAN">GEN PHYSICAN</option>
+                  <option value="GEN SURGEON">GEN SURGEON</option>
+                  <option value="NEPHROLOGIST">NEPHROLOGIST</option>
+                  <option value="NEURO SURGEON">NEURO SURGEON</option>
+                  <option value="NEUROLOGIST">NEUROLOGIST</option>
+                  <option value="OBSTECTRICS AND GYNACOLOGIST">OBSTECTRICS AND GYNACOLOGIST</option>
+                  <option value="ONCOLOGIST">ONCOLOGIST</option>
+                  <option value="OPHTHALMOLOGIST">OPHTHALMOLOGIST</option>
+                  <option value="ORAL MAXILLOFACIAL SURGEON">ORAL MAXILLOFACIAL SURGEON</option>
+                  <option value="ORTHOPEDIC SURGEON">ORTHOPEDIC SURGEON</option>
+                  <option value="PEDIATRICIAN">PEDIATRICIAN</option>
+                  <option value="PSYCHIATRIST">PSYCHIATRIST</option>
+                  <option value="RADIOLOGIST">RADIOLOGIST</option>
+                  <option value="TRANSPLANTATION MEDICINE PHYSICIAN">TRANSPLANTATION MEDICINE PHYSICIAN</option>
+                  <option value="UROLOGIST">UROLOGIST</option>
+                </select>
+              </div>
+              <div class="col-12 col-sm-6 py-0 wow fadeInRight" style="margin-top: 40px;">
+                <select id="uginst"  class="custom-select" required>
+                  
+                  <option selected value=''>
+                    Choose Institute of Graduation
+                  </option>
+                  <option value="general">General Health</option>
+                  <option value="ANESTHESIOLOGIST">ANESTHESIOLOGIST</option>
+                  <option value="BARIATRIC SURGEON">BARIATRIC SURGEON</option>
+                  <option value="CARDIAC SURGEON">CARDIAC SURGEON</option>
+                  <option value="DENTIST">DENTIST</option>
+                  <option value="DERMATOLOGIST">DERMATOLOGIST</option>
+                  <option value="DIEBETOLOGIST">DIEBETOLOGIST </option>
+                  <option value="GASTROENTROLOGIST">GASTROENTROLOGIST</option>
+                  <option value="GEN PHYSICAN">GEN PHYSICAN</option>
+                  <option value="GEN SURGEON">GEN SURGEON</option>
+                  <option value="NEPHROLOGIST">NEPHROLOGIST</option>
+                  <option value="NEURO SURGEON">NEURO SURGEON</option>
+                  <option value="NEUROLOGIST">NEUROLOGIST</option>
+                  <option value="OBSTECTRICS AND GYNACOLOGIST">OBSTECTRICS AND GYNACOLOGIST</option>
+                  <option value="ONCOLOGIST">ONCOLOGIST</option>
+                  <option value="OPHTHALMOLOGIST">OPHTHALMOLOGIST</option>
+                  <option value="ORAL MAXILLOFACIAL SURGEON">ORAL MAXILLOFACIAL SURGEON</option>
+                  <option value="ORTHOPEDIC SURGEON">ORTHOPEDIC SURGEON</option>
+                  <option value="PEDIATRICIAN">PEDIATRICIAN</option>
+                  <option value="PSYCHIATRIST">PSYCHIATRIST</option>
+                  <option value="RADIOLOGIST">RADIOLOGIST</option>
+                  <option value="TRANSPLANTATION MEDICINE PHYSICIAN">TRANSPLANTATION MEDICINE PHYSICIAN</option>
+                  <option value="UROLOGIST">UROLOGIST</option>
+                </select>
+              </div>
+              <div class="col-sm-5 py-2 wow fadeInLeft">
+                <input type="tel" name="ugyear"  class="form-control" placeholder="year" maxlength="4">
+              </div>
+             
+            <div class="row mb-3" style="margin-left: 2px; margin-right: 2px;">
+              <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
+                <label for="pg" >Post Graduation</label>
+                <select id="pg" class="custom-select float-left">
+              
+                  <option selected value=''>
+                    Choose Type of Post Graduation
+                  </option>
+                  <option value="general">General Health</option>
+                  <option value="g001">ANESTHESIOLOGIST</option>
+                  <option value="g002">BARIATRIC SURGEON</option>
+                  <option value="g003">CARDIAC SURGEON</option>
+                  <option value="g004">DENTIST</option>
+                  <option value="g005">DERMATOLOGIST</option>
+                  <option value="g006">DIEBETOLOGIST </option>
+                  <option value="g007">GASTROENTROLOGIST</option>
+                  <option value="g008">GEN PHYSICAN</option>
+                  <option value="g009">GEN SURGEON</option>
+                  <option value="g010">NEPHROLOGIST</option>
+                  <option value="g012">NEURO SURGEON</option>
+                  <option value="g011">NEUROLOGIST</option>
+                  <option value="g013">OBSTECTRICS AND GYNACOLOGIST</option>
+                  <option value="g014">ONCOLOGIST</option>
+                  <option value="g015">OPHTHALMOLOGIST</option>
+                  <option value="g016">ORAL MAXILLOFACIAL SURGEON</option>
+                  <option value="g017">ORTHOPEDIC SURGEON</option>
+                  <option value="g018">PEDIATRICIAN</option>
+                  <option value="g019">PSYCHIATRIST</option>
+                  <option value="g020">RADIOLOGIST</option>
+                  <option value="g021">TRANSPLANTATION MEDICINE PHYSICIAN</option>
+                  <option value="g022">UROLOGIST</option>
+                </select>
+              </div>
+              <div class="col-12 col-sm-6 py-0 wow fadeInRight" style="margin-top: 40px;">
+                <select id="pginst"  class="custom-select">
+                  
+                  <option selected value=''>
+                    Choose Institute of Post Graduation
+                  </option>
+                  <option value="general">General Health</option>
+                  <option value="pg01">ANESTHESIOLOGIST</option>
+                  <option value="pg02">BARIATRIC SURGEON</option>
+                  <option value="pg03">CARDIAC SURGEON</option>
+                  <option value="pg04">DENTIST</option>
+                  <option value="pg05">DERMATOLOGIST</option>
+                  <option value="pg06">DIEBETOLOGIST </option>
+                  <option value="pg07">GASTROENTROLOGIST</option>
+                  <option value="pg08">GEN PHYSICAN</option>
+                  <option value="pg09">GEN SURGEON</option>
+                  <option value="pg10">NEPHROLOGIST</option>
+                  <option value="pg12">NEURO SURGEON</option>
+                  <option value="pg11">NEUROLOGIST</option>
+                  <option value="pg13">OBSTECTRICS AND GYNACOLOGIST</option>
+                  <option value="pg14">ONCOLOGIST</option>
+                  <option value="pg15">OPHTHALMOLOGIST</option>
+                  <option value="pg16">ORAL MAXILLOFACIAL SURGEON</option>
+                  <option value="pg17">ORTHOPEDIC SURGEON</option>
+                  <option value="pg18">PEDIATRICIAN</option>
+                  <option value="pg19">PSYCHIATRIST</option>
+                  <option value="pg20">RADIOLOGIST</option>
+                  <option value="pg21">TRANSPLANTATION MEDICINE PHYSICIAN</option>
+                  <option value="pg22">UROLOGIST</option>
+                </select>
+              </div>
+              <div class="col-sm-4 py-2 wow fadeInLeft">
+                <input type="tel" id="pgyear" class="form-control" placeholder="Year" maxlength="4">
+              </div>
+            </div>
+  
+            <div class="col-12 col-sm-6 py-1 wow fadeInLeft" data-wow-delay="300ms">
+              <select name="sp" id="sp" class="custom-select" required>
+                
+                <option selected value=''>
+                  Choose speciality
+                </option>
+                <option value="general">General Health</option>
+                <option value="S001">ANESTHESIOLOGIST</option>
+                <option value="S002">BARIATRIC SURGEON</option>
+                <option value="S003">CARDIAC SURGEON</option>
+                <option value="S004">DENTIST</option>
+                <option value="S005">DERMATOLOGIST</option>
+                <option value="S006">DIEBETOLOGIST </option>
+                <option value="S007">GASTROENTROLOGIST</option>
+                <option value="S008">GEN PHYSICAN</option>
+                <option value="S009">GEN SURGEON</option>
+                <option value="S010">NEPHROLOGIST</option>
+                <option value="S012">NEURO SURGEON</option>
+                <option value="S011">NEUROLOGIST</option>
+                <option value="S013">OBSTECTRICS AND GYNACOLOGIST</option>
+                <option value="S014">ONCOLOGIST</option>
+                <option value="S015">OPHTHALMOLOGIST</option>
+                <option value="S016">ORAL MAXILLOFACIAL SURGEON</option>
+                <option value="S017">ORTHOPEDIC SURGEON</option>
+                <option value="S018">PEDIATRICIAN</option>
+                <option value="S019">PSYCHIATRIST</option>
+                <option value="S020">RADIOLOGIST</option>
+                <option value="S021">TRANSPLANTATION MEDICINE PHYSICIAN</option>
+                <option value="S022">UROLOGIST</option>
+                <option value="S023">Other</option>
+              </select>
+              
+            </div>
+            <div class="col-12 col-sm-6 py-1 wow fadeInRight" data-wow-delay="300ms">
+              <select name="susp" id="ssp" class="custom-select">
+                
+                <option selected value=''>Choose super speciality</option>
+                <option value="SU001">DM-CARDIOLOGY</option>
+                <option value="SU002">DM-CLINICAL HEMATOLOGY</option>
+                <option value="SU003">DM-CLINICAL PHARMACOLOGY</option>
+                <option value="SU004">DM-ENDOCRINOLOGY</option>
+                <option value="SU005">DM-GASTROENTEROLOGY</option>
+                <option value="SU007">DM-NEONATOLOGY</option>
+                <option value="SU008">DM-NEPHROLOGY</option>
+                <option value="SU010">DM-NEURO RADIOLOGY</option>
+                <option value="SU009">DM-NEUROLOGY</option>
+                <option value="SU006">DM-ONCOLOGY</option>
+                <option value="SU011">DM-PULMONARY MEDICINE</option>
+                <option value="SU012">DM-RHEUMATOLOGY</option>
+                <option value="SU013">MCH-CARDIO THORACIC &amp; VASCULAR SURGERY</option>
+                <option value="SU014">MCH-ENDOCRINE SURGERY</option>
+                <option value="SU015">MCH-NEURO SURGERY</option>
+                <option value="SU016">MCH-ONCOLOGY</option>
+                <option value="SU023">MCH-ORTHOPAEDICS SURGERY</option>
+                <option value="SU017">MCH-PAEDIATRIC SURGERY</option>
+                <option value="SU018">MCH-PLASTIC SURGERY</option>
+                <option value="SU019">MCH-SURGICAL GASTEROENTEROLOGY</option>
+                <option value="SU020">MCH-SURGICAL ONCOLOGY</option>
+                <option value="SU021">MCH-THORACIC SURGERY</option>
+                <option value="SU022">MCH-UROLOGY SURGERY</option>
+                <option value="SU000">OTHER</option>
+                
+              </select>
+            </div>
+            <div class="col-12 col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
+              <select name="city" id="city" class="custom-select">
+                
+                <option selected value=''>
+                  Choose City
+                </option>
+                <option value="general">1</option>
+                <option value="S001">2</option>
+                <option value="S002">3</option>
+              </select>
+            </div>
+            <div class="col-12 col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
+              
+                <input type="tel" id="zip" name="zip" class="form-control" placeholder="Zip Code" maxlength="6">
+              
+            </div>
+          </div>
+          <button type="button" id="prev" class="btn btn-custom wow zoomIn">Prev</button><span></span>
+          <button type="button" id="submit" class="btn btn-custom wow zoomIn">Submit</button>
+
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="maps-container wow fadeInUp">
+    <div id="google-maps"></div>
+  </div>
+
+  <div class="page-section banner-home bg-image bg-custom" style="background-image: url(../assets/img/banner-pattern.svg);">
+    <div class="container py-5 py-lg-0">
+      <div class="row align-items-center">
+        <div class="col-lg-4 wow zoomIn">
+          <div class="img-banner d-none d-lg-block">
+            <img src="../assets/img/mobile_app.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-8 wow fadeInRight">
+          <h1 class="font-weight-normal mb-3">Get easy access of all features using One Health Application</h1>
+          <a href="#"><img src="../assets/img/google_play.svg" alt=""></a>
+          <a href="#" class="ml-2"><img src="../assets/img/app_store.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- .banner-home -->
+
+  <%- include('./footer') %> 
+
+<script src="../assets/js/jquery-3.5.1.min.js"></script>
+
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="../assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+<script src="../assets/vendor/wow/wow.min.js"></script>
+
+<script src="../assets/js/google-maps.js"></script>
+
+<script src="../assets/js/theme.js"></script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
+  
+</body>
+</html>
